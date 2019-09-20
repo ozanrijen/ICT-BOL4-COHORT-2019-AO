@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="etc/contact.css">
+        <link rel="stylesheet" type="text/css" href="etc/style.css">
+    </head>
+    <body>
+            <img class="header" src="assets/banner.jpg">
+            <ul>
+            <li><a href="index.html">Thuis</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="overmij.html">Over mij</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <h3>Contact</h3>
+
+            <div class="container">
+              <form action="/action_page.php">
+                <label for="vnaam">Voornaam</label>
+                <input type="text" id="vnaam" name="voornaam" placeholder="Uw naam..">
+            
+                <label for="anaam">Achternaam</label>
+                <input type="text" id="anaam" name="achternaam" placeholder="Uw achternaam..">
+            
+                <label for="land">Land</label>
+                <select id="land" name="land">
+                  <option value="nederland">Nederland</option>
+                  <option value="belgie">België</option>
+                  <option value="duitsland">Duitsland</option>
+                </select>
+            
+                <label for="onderwerp">Onderwerp</label>
+                <textarea id="onderwerp" name="onderwerp" placeholder="Typ iets.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Verstuur">
+              </form>
+            </div>
+    </body>
+</html>
