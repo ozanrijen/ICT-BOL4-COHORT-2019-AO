@@ -20,5 +20,5 @@ var totaalsmall = small*prijs;
 var totaalmedium = medium*prijs2;
 var totaallarge = large*prijsmlarge;
 
-document.write("Totaal Prijs: $",totaallarge+totaalmedium+totaalsmall);
+document.write("Totaal Prijs: $",(totaallarge+totaalmedium+totaalsmall).toFixed(2));
 document.write('<center>');
