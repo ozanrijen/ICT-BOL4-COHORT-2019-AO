@@ -1,0 +1,35 @@
+body {
+    background-image: url("img/header_bg.jpg");
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+} 
+
+.icons {
+    height: 40px;
+    width: 40px;
+}
+
+div.item {
+    font-family: 'Roboto', sans-serif;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    color: white;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.caption {
+    display: block;
+}
+
+
+
