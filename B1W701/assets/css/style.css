@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.grid-container {
+  margin: 0 auto;
+  width: 1100px;
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  grid-template-rows: 115px 425px auto auto;
+  grid-template-columns: 367px 366px 367px;
+}
+
+.header {
+  background-image: url("../img/header_bg.png");
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 100%;
+}
+
+.banner {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("../img/banner_bg.png");
+}
+
+.banner-foto {
+  width: 90%;
+  display: flex;
+  padding-left: 7%;
+  padding-top: 40px;
+
+}
+
+.banner-text {
+  color: white;
+  padding-top: 40px;
+  padding-right: 30px;
+  background-image: url("../img/banner_bg.png");
+  word-break: break-word;
+}
+.banner-text p{
+  word-break: break-all;
+}
+
+.slide {
+  margin: auto;
+  margin-top: 5%;
+}
+.slide .text{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.slide img {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.link{
+  padding-bottom: 10px;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-image: url("../img/footer_bg.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner-text-contact {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: white;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 30px;
+  background-image: url("../img/banner_bg.png");
+  word-break: break-word;
+}
+
+.navigatie {
+  margin: 0;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigatie a{
+  color: black;
+  text-decoration: none;
+}
+.navigatie a:hover{
+  text-decoration: underline;
+}
+.navigatie a:active {
+  color: cyan;
+}
