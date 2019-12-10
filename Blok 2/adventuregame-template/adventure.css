@@ -1,0 +1,28 @@
+.buttons {
+    margin: 0;
+    opacity: 75%;
+}
+
+.buttons:hover {
+    opacity: 100%;
+}
+
+.game-containter {
+    display: block;
+    width: 50%;
+    height: 300px;
+    margin: "0 auto";
+    background-color: "black";
+    border: "4px solid maroon";
+    color: "white";
+    text-align: "center";
+    opacity: "0.7";
+}
+
+.allButtons {
+    display: block;
+}
+
+body {
+    background-color: red;
+}

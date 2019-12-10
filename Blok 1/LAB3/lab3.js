@@ -1,0 +1,23 @@
+var z = 3
+var x = 6
+document.write(1 + " x " + x + " = " + 1*x +"<br>")
+document.write(2 + " x " + x + " = " + 2*x +"<br>")
+document.write(3 + " x " + x + " = " + 3*x +"<br>")
+document.write(4 + " x " + x + " = " + 4*x +"<br>")
+document.write(5 + " x " + x + " = " + 5*x +"<br>")
+document.write(6 + " x " + x + " = " + 6*x +"<br>")
+document.write(7 + " x " + x + " = " + 7*x +"<br>")
+document.write(8 + " x " + x + " = " + 8*x +"<br>")
+document.write(9 + " x " + x + " = " + 9*x +"<br>")
+document.write(10 + " x " + x + " = " + 10*x +"<br>")
+"<br>"
+document.write(1 + " x " + z + " = " + 1*z +"<br>")
+document.write(2 + " x " + z + " = " + 2*z +"<br>")
+document.write(3 + " x " + z + " = " + 3*z +"<br>")
+document.write(4 + " x " + z + " = " + 4*z +"<br>")
+document.write(5 + " x " + z + " = " + 5*z +"<br>")
+document.write(6 + " x " + z + " = " + 6*z +"<br>")
+document.write(7 + " x " + z + " = " + 7*z +"<br>")
+document.write(8 + " x " + z + " = " + 8*z +"<br>")
+document.write(9 + " x " + z + " = " + 9*z +"<br>")
+document.write(10 + " x " + z + " = " + 10*z +"<br>")

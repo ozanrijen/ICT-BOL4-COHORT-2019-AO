@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+            // Robotarm bibliotheek inladen
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            // Het level inladen
+            robotArm.loadLevel("exam 1");
+            robotArm.speed = 1500;
+            // Jou instructies volgen hier
+                robotArm.moveRight();
+                for (var a = 0; a < 3; a++) {
+                    for (var y = 0; y < 3; y++) {
+                        robotArm.moveRight();
+                    }   robotArm.grab();
+                    for (var q = 3; q > 0; q--) {
+                        robotArm.moveLeft();
+                    }   robotArm.drop();
+                } for (var y = 0; y < 3; y++){
+                    robotArm.grab();
+                    for (var x = 0; x < 1; x++) {
+                        robotArm.moveLeft();
+                    }   robotArm.drop();
+                    for (var q = 0; q < 1; q++) {
+                        robotArm.moveRight();
+                }}
+                for (var y = 0; y < 4; y++) {
+                    robotArm.moveRight();
+                }   for (var c = 0; c < 3; c++) {
+                    robotArm.grab()
+                    for (var e = 0; e < 3; e++) {
+                        robotArm.moveRight();
+                    } robotArm.drop();
+                    for (var f = 3; f > 0; f--) {
+                        robotArm.moveLeft();
+                }}
+                for (var y = 0; y < 3; y++) {
+                    robotArm.moveRight();
+                }   for (var g = 0; g < 3; g++) {
+                    robotArm.grab();
+                    for (var h = 0; h < 1; h++) {
+                        robotArm.moveRight();
+                    }   robotArm.drop();
+                    for (var i = 1; i > 0; i--) {
+                        robotArm.moveLeft();
+                    }}
+            // De door jou opgegeven instructies uitvoeren
+            robotArm.run();
+        </script>
+    </body>
+</html>
+Door Oguzhan Korucu 2A
