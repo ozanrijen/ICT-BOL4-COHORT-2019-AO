@@ -1,0 +1,43 @@
+body {
+    width: 550px;
+    height: 400px;
+    background-color: grey;
+    margin-left: 500px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    grid-template-rows: 50px 50px 50px;
+    align-items: center;
+    background-color: orange;
+    padding: 52px;
+}
+
+input {
+    width: 150px;
+    margin: 0;
+}
+
+button {
+    width: 150px;
+}
+
+#content {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#letter1, #letter2,#letter3, #letter4, #letter5 {
+    border-color: black;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    margin-left: 26px;
+}
+
+#buttons {
+    background-color: rgb(233, 233, 233);
+    padding: 52px;
+}

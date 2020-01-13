@@ -478,3 +478,39 @@ var words = [
 	"zeker",
 	"zever",
 	"zeeen"];
+
+	const vakjes = document.getElementById("lingo-container");
+
+	for (l = 0; l < 24; l++) {
+		
+		var Letters = document.createElement("input");
+		Letters.type = "text";
+		vakjes.appendChild(Letters);
+		Letters.style.verticalAlign = 'top';
+		Letters.style.margin = '2px';
+		Letters.style.border = '1px black solid';
+		Letters.style.borderRadius = '5px';
+		Letters.style.display = 'inline-block';
+		Letters.style.height = '1.25em';
+		Letters.style.width = '1.25em';
+		Letters.style.textAlign = 'center';
+		Letters.style.fontSize = '3.5em';
+		Letters.style.fontFamily = 'Lato', 'sans-serif';
+	}
+
+	var random = words[Math.floor(Math.random() * words.length)];
+	var textArray = random.split('');
+	document.getElementById('letter1').value = textArray[0];
+	
+	function lingo() {
+		var random = words[Math.floor(Math.random() * words.length)];
+		var text = random.value;
+		var textArray = text.split('');
+		var textSlice = text.slice(0, 1);
+		var F16 = document.getElementById("letter").innerText = textArray[0];
+		document.getElementById("letter2").innerText = textArray[1];
+		document.getElementById("letter3").innerText = textArray[2];
+		document.getElementById("letter4").innerText = textArray[3];
+		document.getElementById("letter5").innerText = textArray[4];
+		var input = document.getElementById("input").value;
+	}
