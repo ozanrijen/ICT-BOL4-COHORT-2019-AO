@@ -479,38 +479,44 @@ var words = [
 	"zever",
 	"zeeen"];
 
-	const vakjes = document.getElementById("lingo-container");
+	const container = document.getElementById("container");
 
-	for (l = 0; l < 24; l++) {
-		
-		var Letters = document.createElement("input");
-		Letters.type = "text";
-		vakjes.appendChild(Letters);
-		Letters.style.verticalAlign = 'top';
-		Letters.style.margin = '2px';
-		Letters.style.border = '1px black solid';
-		Letters.style.borderRadius = '5px';
-		Letters.style.display = 'inline-block';
-		Letters.style.height = '1.25em';
-		Letters.style.width = '1.25em';
-		Letters.style.textAlign = 'center';
-		Letters.style.fontSize = '3.5em';
-		Letters.style.fontFamily = 'Lato', 'sans-serif';
+	for(vakjes = 0; vakjes < 25; vakjes++){
+		var letters = document.createElement("input");
+		container.appendChild(letters);
+		letters.style.background = "white";
+		letters.style.verticalAlign = top;
+		letters.style.marginTop = 4;
+		letters.style.display = "inline-block";
+		letters.style.height = '1.25em';
+		letters.style.width = '1.25em';
+		letters.style.textAlign = 'center';
+		letters.style.fontSize = '3.5em';
+		letters.style.fontFamily = 'Lato', 'sans-serif';
+		letters.id += 'vakje'+ vakjes;
 	}
-
+	
 	var random = words[Math.floor(Math.random() * words.length)];
 	var textArray = random.split('');
-	document.getElementById('letter1').value = textArray[0];
-	
-	function lingo() {
-		var random = words[Math.floor(Math.random() * words.length)];
-		var text = random.value;
-		var textArray = text.split('');
-		var textSlice = text.slice(0, 1);
-		var F16 = document.getElementById("letter").innerText = textArray[0];
-		document.getElementById("letter2").innerText = textArray[1];
-		document.getElementById("letter3").innerText = textArray[2];
-		document.getElementById("letter4").innerText = textArray[3];
-		document.getElementById("letter5").innerText = textArray[4];
-		var input = document.getElementById("input").value;
+	var antwoord = document.getElementById("antwoord");
+	var antwoord = antwoord.value.split('');
+	console.log(antwoord);
+	console.log(random);
+
+	function Check() {
+		for (i = 0; i < random.length; i++) {
+			if(antwoord[i] == random[i]) {
+				document.getElementById("vakje" + (i+1)).innerHTML = random[i];
+				document.getElementById("vakje" + (i+1)).style.backgroundColor = "green";
+				random[i] = "*";
+			} else if (random.indexOf(antwoord[i])>-1) {
+				document.getElementById("vakje" + (i+1)).innerHTML = antwoord[i];
+				document.getElementById("vakje" + (i+1)).style.backgroundColor = "yellow";
+			} else {
+				document.getElementById("vakje" + (i+1)).innerHTML = antwoord[i];
+				document.getElementById("vakje" + (i+1)).style.backgroundColor = "red";
+			}
+		}
 	}
+	
+	
