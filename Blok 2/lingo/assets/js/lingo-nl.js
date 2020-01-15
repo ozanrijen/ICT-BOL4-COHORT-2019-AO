@@ -480,43 +480,72 @@ var words = [
 	"zeeen"];
 
 	const container = document.getElementById("container");
+	var poging = 0;
 
-	for(vakjes = 0; vakjes < 25; vakjes++){
-		var letters = document.createElement("input");
-		container.appendChild(letters);
-		letters.style.background = "white";
-		letters.style.verticalAlign = top;
-		letters.style.marginTop = 4;
-		letters.style.display = "inline-block";
-		letters.style.height = '1.25em';
-		letters.style.width = '1.25em';
-		letters.style.textAlign = 'center';
-		letters.style.fontSize = '3.5em';
-		letters.style.fontFamily = 'Lato', 'sans-serif';
-		letters.id += 'vakje'+ vakjes;
-	}
+	for (var rij = 0; rij < 5; rij++) {
+        for (var kolom = 0; kolom < 5; kolom++) {
+			var letters = document.createElement("input");
+			container.appendChild(letters);
+			letters.style.background = "white";
+			letters.style.verticalAlign = top;
+			letters.style.marginTop = 4;
+			letters.style.display = "inline-block";
+			letters.style.height = '1.25em';
+			letters.style.width = '1.25em';
+			letters.style.textAlign = 'center';
+			letters.style.fontSize = '3.5em';
+			letters.style.fontFamily = 'Lato', 'Ariel';
+			letters.id += "vakje" + rij + "-" + kolom;
+        }
+    }
+
+
 	
-	var random = words[Math.floor(Math.random() * words.length)];
-	var textArray = random.split('');
-	var antwoord = document.getElementById("antwoord");
-	var antwoord = antwoord.value.split('');
-	console.log(antwoord);
+	var random = words[Math.floor(Math.random() * words.length)];		//Pakt een random woord uit de woordenlijst
+	var textArray = random.split('');		//Split de woorden in aparte letters
 	console.log(random);
 
+	var firstLetter = document.getElementById("vakje0-0").value = textArray[0];
+	document.getElementById("vakje0-0").style.backgroundColor = "green";
+	console.log(firstLetter);
+	
+
+
 	function Check() {
-		for (i = 0; i < random.length; i++) {
-			if(antwoord[i] == random[i]) {
-				document.getElementById("vakje" + (i+1)).innerHTML = random[i];
-				document.getElementById("vakje" + (i+1)).style.backgroundColor = "green";
-				random[i] = "*";
-			} else if (random.indexOf(antwoord[i])>-1) {
-				document.getElementById("vakje" + (i+1)).innerHTML = antwoord[i];
-				document.getElementById("vakje" + (i+1)).style.backgroundColor = "yellow";
-			} else {
-				document.getElementById("vakje" + (i+1)).innerHTML = antwoord[i];
-				document.getElementById("vakje" + (i+1)).style.backgroundColor = "red";
+		antwoord = document.getElementById("antwoord");
+		antwoord = antwoord.value.split('');
+		console.log(antwoord);
+		if (antwoord.length == 5) {
+			for (i = 0; i < 5; i++) {
+				if(antwoord[i] == random[i]) {
+					document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
+					document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "green";
+					antwoord[i] = null;
+					random[i] = null;
+				}
 			}
+
+			for (i = 0; i < 5; i++) {
+				if (antwoord[i] != null) {
+					if (random.indexOf(antwoord[i])>-1) {
+						document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
+						document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "yellow";
+
+						var pos = random[random.indexOf(antwoord[i])]
+						random[i] = null;
+						antwoord[pos] = null;
+					} else {
+						document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
+						document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "red";
+					}
+				}
+			}
+			poging++
+			console.log(random.indexOf(antwoord[i]));
+		} else {
+			alert("Je hebt een woord met 5 letters nodig.")
 		}
+
 	}
-	
-	
+		
+
