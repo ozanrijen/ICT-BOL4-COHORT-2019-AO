@@ -1,0 +1,390 @@
+body{
+    margin: 0px;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.fontnormaltekst{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.gridcontainer{
+    margin-left: 1px;
+    display: inline-grid;
+    grid-template-columns: 260px 333px 332px 333px 260px;
+    grid-template-rows: auto;
+    font-family: 'Archivo', sans-serif;
+}
+
+.logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav-container{
+    background-color: #222931;
+    width:950px;
+    height: 65px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+.navbar{
+    padding: 25px;
+    font-size: 12px;
+    color: white;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+.link{
+    padding-top: 25px;
+    padding-bottom: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 0px;  
+}
+ul{
+    list-style: none;
+    position: absolute;
+    display: none;
+    margin-top: 40px;
+    margin-left: -88px;
+
+    width: 150px;
+    height: 120px;
+
+    padding: 5px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+li{
+    margin: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 30;
+  }
+li:hover{
+    position: block;
+    background-color: #ffe718;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.linkbarhover:hover ul{
+    background-color: #222931;
+    color: white;
+    display: unset;
+}
+.linkbarhover:hover{
+    background-color: #ffe718;
+    color: white;
+    display:unset;
+}
+
+
+.foto-groot{
+    
+    z-index: -1;
+    margin-top: -30px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.dienstenbc{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 40px
+}
+.dienstentitel{
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 95px;
+}
+.dienstentekst{
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+.dienstenpos{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 300px;
+}
+
+.highl1{
+    color: #ffe718;
+}
+.highl2{
+    color: #ffe718;
+}
+.highl3{
+    color: #ffe718;
+}
+.tooltipfont{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+}
+.tooltip1{
+    display: none;
+    width: 170px;
+    background-color: #aeb6be;
+    padding: 10px;
+    margin-left: -82px;
+    margin-top: 20px;
+}
+.tooltip2{
+    display: none;
+    background-color: #aeb6be;
+    width: 170px;
+    margin-left: -48px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.tooltip3{
+    display: none;
+    background-color: #aeb6be;
+    width: 170px;
+    margin-left: -82px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.highl1:hover .tooltip1{
+    display:unset;
+}   
+.highl2:hover .tooltip2{
+    display: unset;
+}
+.highl3:hover .tooltip3{
+    display: unset;
+}
+
+.imgX3{
+    z-index: -1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.imgtekstX3{
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 300px;
+    height: 120px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0)
+}
+.imgtekstX3:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8)
+}
+.imgtekst3-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.imgtekst3-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.imgtekst3-3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.griditemimg3-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.griditemimg3-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.griditemimg3-3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.gele-banner{
+    width: 1488px;
+    height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    background-color: #ffe718;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.ribbonlargetekst{
+    margin-top: 60px;
+    margin-left: 150px;
+    font-size: 34px;
+    font-weight: 700;
+}
+.ribbonsmalltekst{
+    margin-top: -20px;
+    margin-left: 530px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.ribbonbutton{
+    margin-top: -40px;
+    margin-left: 1080px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+}
+.ribbonbutton:hover{
+    background-color: black;
+    color: white;
+}
+.ribbonbuttontekst{
+    margin-left: 30%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.griditemimgwithboxes{
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.yellowbox:hover{
+    background-color: black;
+    color: white;
+}
+.yellowbox{
+    background-color: #ffe718;
+    width: 300px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+.icon-pos{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.btn-titel{
+    margin-left: 120px;
+    margin-top: -60px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.btn-text{
+    margin-left: 120px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.griditembox3-1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.griditembox3-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.griditembox3-3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+
+.footerfontnormal{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.footer-titel{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.footer-text{
+    margin-bottom: 50px;
+}
+.gridtemfootertekst1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    padding-right: 100px;
+}
+.gridtemfootertekst2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+.griditemblackbar{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    width: auto;
+    height: 50px;
+    background-color: #222931;
+}
+.griditemblackbartekst{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 17px;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    padding-top: 13;
+}
