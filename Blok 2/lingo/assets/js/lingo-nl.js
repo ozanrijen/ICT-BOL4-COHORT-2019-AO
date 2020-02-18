@@ -15,7 +15,7 @@
 			letters.style.fontFamily = 'Lato', 'Ariel';
 			letters.id += "vakje" + rij + "-" + kolom;
         }
-    }
+	}
 
 
 	

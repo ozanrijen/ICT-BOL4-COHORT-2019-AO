@@ -1,0 +1,15 @@
+.nacht {
+    background-image: url("../img/night.png");
+}
+
+.ochtend {
+    background-image: url("../img/morning.png");
+}
+
+.middag {
+    background-image: url("../img/afternoon.png");
+}
+
+.avond {
+    background-image: url("../img/evening.png");
+}
